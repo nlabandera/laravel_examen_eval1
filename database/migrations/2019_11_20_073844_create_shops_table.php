@@ -19,7 +19,7 @@ class CreateShopsTable extends Migration
             $table->longText('description');
             $table->string('password',255);
             $table->string('email',50);
-            $table->integer('likes',11);
+            $table->integer('likes');
             $table->timestamps();
         });
     }

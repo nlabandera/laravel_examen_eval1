@@ -1,14 +1,14 @@
-@extends('layouts.app')
-
-@section('title', 'Examen')
-
-@section('content')
-
-  <h3>Nueva tienda</h3>
- <form method="POST" action="">
-		@csfr
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario para nueva tienda</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form method="POST" action="{{route('muestratienda')}}">
+		
 		<label>Nombre de la tienda</label><br>
-		<input type="text" name="shop"><br>
+		<input type="text" name="shop"> @if($errors->has('shop'))<span>{{$errors->first('shops')}}@endif</span><br>
 		<label>Descripción:</label><br>
 		<input type="text" name="description"><br>
 		<label>Contraseña: </label><br>
@@ -19,6 +19,6 @@
 		<input type="number" name="likes"><br><br>
 		<input type="submit" value="Enviar">
 	</form>
-  <br>
 
-@endsection
+</body>
+</html>

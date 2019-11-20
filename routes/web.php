@@ -14,9 +14,15 @@ Route::get('git', function () {
     return view('git');
 })->name('git');
 
+Route::get('formulario', function () {
+    return view('nuevatienda');
+})->name('nuevatienda');
+
 Route::get('/', function () {
     return view('home');
 })->name('home');
+
+Route::post('nuevatienda/post','ShopController@newShop')->name('muestratienda');
 
 Route::get('tiendas/create','ShopController@create')->name('tiendas.create');
 Route::post('tiendas/store','ShopController@store')->name('tiendas.store');
