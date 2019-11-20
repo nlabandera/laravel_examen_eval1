@@ -16,6 +16,7 @@
                 <a href="">Menu</a>
                 <a href="git">git</a>
                 <a href="{{route('nuevatienda')}}">Nueva tienda</a>
+                <a href="{{route('productos.index')}}">Listado de productos</a>
 
             </div>
             <hr><br><br>
