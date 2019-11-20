@@ -15,13 +15,13 @@
       <th>Stock</th>
          
     </tr>
-    @foreach ($products as $producto)
+    @foreach ($products as $product)
     <tr>
-      <td>{{$producto->id}}</td>
-      <td>{{$producto->name}}</td>
-      <td>{{$producto->description}}</td>
-      <td>{{$producto->price}}</td>
-      <td>{{$producto->stock}}</td>     
+      <td>{{$product->id}}</td>
+      <td>{{$product->name}}</td>
+      <td>{{$product->description}}</td>
+      <td>{{$product->price}}</td>
+      <td>{{$product->stock}}</td>     
     </tr>
     @endforeach
 
